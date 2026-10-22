@@ -1,0 +1,60 @@
+/* StudentHub custom styles */
+:root {
+    --primary: #0d6efd;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex: 1;
+}
+
+.navbar-brand span {
+    color: #ffc107;
+}
+
+.event-card {
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.event-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.12) !important;
+}
+
+/* Dark mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+body.dark-mode .card {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+body.dark-mode .table {
+    color: #e0e0e0;
+}
+body.dark-mode .table-light {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+}
+body.dark-mode .form-control,
+body.dark-mode .form-select {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    border-color: #444;
+}
+body.dark-mode .breadcrumb-item a {
+    color: #90caf9;
+}
+body.dark-mode footer {
+    background-color: #0a0a0a !important;
+}
+
+/* Accessibility focus */
+a:focus, button:focus, input:focus, select:focus, textarea:focus {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+}
